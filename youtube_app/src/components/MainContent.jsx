@@ -72,10 +72,11 @@ function MainContent() {
   const [videos, setVideos] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
-  const API_KEY = "AIzaSyCmTcbBHvE3bLirycwGrIJt85p1XjvuVo8";
-
+  // const API_KEY = "AIzaSyCmTcbBHvE3bLirycwGrIJt85p1XjvuVo8";
+  const API_KEY = "AIzaSyCB-4LRB71zBut2rxWwzm_Nkfw0FYMtXfE";
+  
   const fetchVideos = () => {
-    if (!searchQuery.trim()) {
+    if (searchQuery == "") {
       alert("Please enter a search term!");
       return;
     }
